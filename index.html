@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITINIXH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="content">
+        <div class="spiderman-theme">
+            <svg id="spiderman-mask" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Mask Outline -->
+                <path class="mask-outline" d="M50 5 C 25 5, 5 30, 5 50 C 5 70, 25 95, 50 95 C 75 95, 95 70, 95 50 C 95 30, 75 5, 50 5 Z" fill="red"/>
+
+                <!-- Web Lines - More organic looking -->
+                <defs>
+                    <path id="web-strand" d="M 0 0 Q 5 -2 10 0 Q 15 2 20 0 Q 25 -2 30 0" stroke="black" stroke-width="0.7" fill="none"/>
+                </defs>
+
+                <!-- Radial Lines -->
+                <line x1="50" y1="5" x2="50" y2="95" stroke="black" stroke-width="1"/>
+                <line x1="5" y1="50" x2="95" y2="50" stroke="black" stroke-width="1"/>
+                <line x1="15" y1="15" x2="85" y2="85" stroke="black" stroke-width="1"/>
+                <line x1="15" y1="85" x2="85" y2="15" stroke="black" stroke-width="1"/>
+                <line x1="30" y1="8" x2="70" y2="92" stroke="black" stroke-width="1"/>
+                 <line x1="8" y1="30" x2="92" y2="70" stroke="black" stroke-width="1"/>
+                 <line x1="8" y1="70" x2="92" y2="30" stroke="black" stroke-width="1"/>
+                 <line x1="70" y1="8" x2="30" y2="92" stroke="black" stroke-width="1"/>
+
+                <!-- Curved Concentric Webs (Simplified Example - a full web is complex) -->
+                 <!-- Outer Ring -->
+                 <path d="M 50 15 A 35 35 0 0 1 85 50" fill="none" stroke="black" stroke-width="0.8"/>
+                 <path d="M 85 50 A 35 35 0 0 1 50 85" fill="none" stroke="black" stroke-width="0.8"/>
+                 <path d="M 50 85 A 35 35 0 0 1 15 50" fill="none" stroke="black" stroke-width="0.8"/>
+                 <path d="M 15 50 A 35 35 0 0 1 50 15" fill="none" stroke="black" stroke-width="0.8"/>
+                 <!-- Middle Ring -->
+                 <path d="M 50 25 A 25 25 0 0 1 75 50" fill="none" stroke="black" stroke-width="0.8"/>
+                 <path d="M 75 50 A 25 25 0 0 1 50 75" fill="none" stroke="black" stroke-width="0.8"/>
+                 <path d="M 50 75 A 25 25 0 0 1 25 50" fill="none" stroke="black" stroke-width="0.8"/>
+                 <path d="M 25 50 A 25 25 0 0 1 50 25" fill="none" stroke="black" stroke-width="0.8"/>
+                <!-- Inner Ring -->
+                 <path d="M 50 35 A 15 15 0 0 1 65 50" fill="none" stroke="black" stroke-width="0.8"/>
+                 <path d="M 65 50 A 15 15 0 0 1 50 65" fill="none" stroke="black" stroke-width="0.8"/>
+                 <path d="M 50 65 A 15 15 0 0 1 35 50" fill="none" stroke="black" stroke-width="0.8"/>
+                 <path d="M 35 50 A 15 15 0 0 1 50 35" fill="none" stroke="black" stroke-width="0.8"/>
+
+
+                <!-- Eyes Group -->
+                <g class="eyes">
+                    <!-- Eye Whites -->
+                    <path class="eye eye-left" d="M30 35 Q 20 50 30 65 Q 45 55 45 45 Q 40 35 30 35 Z" fill="white"/>
+                    <path class="eye eye-right" d="M70 35 Q 80 50 70 65 Q 55 55 55 45 Q 60 35 70 35 Z" fill="white"/>
+                    <!-- Eye Borders -->
+                    <path d="M30 35 Q 20 50 30 65 Q 45 55 45 45 Q 40 35 30 35 Z" fill="none" stroke="black" stroke-width="2"/>
+                    <path d="M70 35 Q 80 50 70 65 Q 55 55 55 45 Q 60 35 70 35 Z" fill="none" stroke="black" stroke-width="2"/>
+                </g>
+            </svg>
+        </div>
+        <h1 class="site-title">VITINIXH</h1>
+        <p class="welcome-text">bem vindo ao meu site</p>
+        <div class="button-container">
+            <a href="#" class="link-button main-button" target="_blank" rel="noopener noreferrer">Main Link</a>
+            <a href="#" class="link-button tiktok-button" target="_blank" rel="noopener noreferrer">TikTok</a>
+            <a href="#" class="link-button youtube-button" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </div>
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
